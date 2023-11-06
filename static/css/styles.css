@@ -1,0 +1,126 @@
+ /* The sidebar menu */
+
+ .sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #87C4FF; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: width 0.5s ease; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #E0F4FF;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    margin-left: 0;
+    transition: margin-left .5s ease; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+  } 
+  .horizontal-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.horizontal-list li {
+    display: inline;
+    margin-right: 20px; /* Adjust the spacing between list items as needed */
+}
+
+.horizontal-list li:last-child {
+    margin-right: 0; /* Remove margin for the last list item to avoid extra spacing */
+}
+body, h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+}
+.welcome-heading {
+  text-align: center;
+}
+
+body {
+  width: 100vw; /* Set the width of the rectangle */
+  height: 100vw; /* Set the height of the rectangle */
+  background: linear-gradient(to bottom, #E0F4FF, #FFEED9); /* Define the gradient colors */
+  /* Additional styles such as border-radius, padding, etc., can be added here */
+}
+
+/* Center the welcome heading */
+.welcome-heading {
+  text-align: center;
+  margin-top: 50px; /* Adjust the margin-top value as needed */
+}
+
+/* Flex container for the content */
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px; /* Add margin-top for spacing */
+}
+
+/* Left div (pushed to the left) */
+.flex-container > div:first-child {
+  margin-right: auto;
+  position: absolute;
+  right: 50%;
+}
+
+/* Right div (pushed to the right) */
+.flex-container > div:last-child {
+  margin-left: auto;
+  position: absolute;
+  left: 55%;
+}
+
+/* Style for the div elements */
+.flex-container > div {
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
