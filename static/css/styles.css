@@ -7,7 +7,7 @@
     z-index: 1; /* Stay on top */
     top: 0;
     left: 0;
-    background-color: #87C4FF; /* Black*/
+    background-color: #F1EAFF; /* Black*/
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 60px; /* Place content 60px from the top */
     transition: width 0.5s ease; /* 0.5 second transition effect to slide in the sidebar */
@@ -41,8 +41,8 @@
   .openbtn {
     font-size: 20px;
     cursor: pointer;
-    background-color: #E0F4FF;
-    color: black;
+    background-color: black;
+    color: white;
     padding: 10px 15px;
     border: none;
   }
@@ -78,18 +78,13 @@
     margin-right: 0; /* Remove margin for the last list item to avoid extra spacing */
 }
 body, h1, h2, h3, h4, h5, h6 {
+  color: white;
   font-family: 'Roboto', sans-serif;
 }
 .welcome-heading {
   text-align: center;
 }
 
-body {
-  width: 100vw; /* Set the width of the rectangle */
-  height: 100vw; /* Set the height of the rectangle */
-  background: linear-gradient(to bottom, #E0F4FF, #FFEED9); /* Define the gradient colors */
-  /* Additional styles such as border-radius, padding, etc., can be added here */
-}
 
 /* Center the welcome heading */
 .welcome-heading {
